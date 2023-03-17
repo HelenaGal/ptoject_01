@@ -31,18 +31,3 @@ n=round(n_int+n_float,2)
 
 print('Три песни звучат', n, 'минут')
 
-
-#three_songs=my_favorite_songs[ 1 ] [1]+ my_favorite_songs [5] [1]
-#if three_songs[1]>60:
-    
-#m_three_songs=int(three_songs)
-#s_three_songs=int((three_songs-m_three_songs)*100)
-#print (m_three_songs)
-#print (s_three_songs)
-#m_three_songs =m_three_songs + s_three_songs//60
-#s_three_songs=s_three_songs%60
-
-
-
-#print( 'три песни звучат', m_three_songs, 'минут и ', s_three_songs, 'секунд')
-#print(datetime.time(three_songs).strftime('%M:%S'))
