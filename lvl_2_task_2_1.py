@@ -29,5 +29,4 @@ def maximum(arr):
 result_min=minimum(spisok)
 result_max=maximum(spisok)
 
-print('min = ', result_min, 'max =', result_max)
-
+print('min = ', result_min, ', max =', result_max)
