@@ -1,5 +1,6 @@
 my_favorite_songs = 'Waste a Moment, Staying\' Alive, A Sorta Fairytale, Start Me Up, New Salvation'
-print(my_favorite_songs[0:14])
-print(my_favorite_songs[-13:])
-print(my_favorite_songs[16:30])
-print(my_favorite_songs[-26:-15])
+
+print((my_favorite_songs.split(","))[0])
+print((my_favorite_songs.split(","))[len((my_favorite_songs.split(",")))-1])
+print((my_favorite_songs.split(","))[1])
+print((my_favorite_songs.split(","))[len(my_favorite_songs.split(","))-2])
