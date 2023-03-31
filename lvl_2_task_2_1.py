@@ -8,25 +8,25 @@
 # * [5]                             -> min = 5, max = 5
 # функции max и min использовать нельзя!
 
-spisok=input('введите список через пробел').split()
-print(spisok)
+sp_1 = [4, 6, 2, 1, 9, 63, -134, 566]
+sp_2 = [-52, 56, 30, 29, -54, 0, -110]
+sp_3 = [42, 54, 65, 87,0]
+sp_4 = [5]
 
 def minimum(arr):
-    min_=arr[0]
-    for i in (arr):
-        if i < min_:
-            min_=i
-    return(min_)
-
+  arr_sort = sorted(arr)
+  return arr_sort[0]
+ 
+    
 
 def maximum(arr):
-    max_=arr[0]
-    for i in (arr):
-        if i > max_:
-            max_=i
-    return(max_)
+  arr_sort = sorted(arr)
+  n=len(arr)-1
+  return arr_sort[n]
 
-result_min=minimum(spisok)
-result_max=maximum(spisok)
 
-print('min = ', result_min, ', max =', result_max)
+
+print(sp_1, 'max=', maximum(sp_1), ', min=', minimum(sp_1))
+print(sp_2, 'max=', maximum(sp_2), ', min=', minimum(sp_2))
+print(sp_3, 'max=', maximum(sp_3), ', min=', minimum(sp_3))
+print(sp_4, 'max=', maximum(sp_4), ', min=', minimum(sp_4))
