@@ -31,3 +31,17 @@ n=round(n_int+n_float,2)
 
 print('Три песни звучат', n, 'минут')
 
+# Ну довольно громоздко) но да, так можно)
+# вот например мое решение
+from datetime import timedelta
+from math import modf
+from random import sample
+
+
+total_time = timedelta()
+
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Три песни звучат {total_time} минут')
